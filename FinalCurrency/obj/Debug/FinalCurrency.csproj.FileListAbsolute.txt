@@ -1,0 +1,16 @@
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\FinalCurrency.exe.config
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\FinalCurrency.exe
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\FinalCurrency.pdb
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\RestSharp.dll
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\RestSharp.xml
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.Form1.resources
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.Properties.Resources.resources
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCur.B925B6E8.Up2Date
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.exe
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\obj\Debug\FinalCurrency.pdb
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pc\source\repos\FinalCurrency\FinalCurrency\bin\Debug\Newtonsoft.Json.xml
