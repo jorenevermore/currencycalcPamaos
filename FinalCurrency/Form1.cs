@@ -7,6 +7,7 @@ using System.Net;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
 
 namespace FinalCurrency
 {
@@ -213,15 +214,29 @@ namespace FinalCurrency
             e.DrawFocusRectangle();
         }
 
-
         private void convertButton_Click(object sender, EventArgs e)
         {
-            if (decimal.TryParse(amountInput.Text, out decimal amount))
+            string amountText = amountInput.Text;
+
+         
+            if (amountText.Contains("-"))
+            {
+                MessageBox.Show("Please enter a valid positive amount.");
+                return;
+            }
+
+   
+            if (!Regex.IsMatch(amountText, @"^\d+(\.\d+)?$"))
+            {
+                MessageBox.Show("Invalid input, please enter numbers only.");
+                return;
+            }
+
+            if (decimal.TryParse(amountText, out decimal amount))
             {
                 string fromCurrencyDisplay = fromCurrencyComboBox.SelectedItem?.ToString();
                 string toCurrencyDisplay = toCurrencyComboBox.SelectedItem?.ToString();
 
-               
                 string fromCurrency = fromCurrencyDisplay?.Split(new[] { " - " }, StringSplitOptions.None)[0];
                 string toCurrency = toCurrencyDisplay?.Split(new[] { " - " }, StringSplitOptions.None)[0];
 
@@ -237,7 +252,6 @@ namespace FinalCurrency
                     string conversionRateString = (Math.Abs(conversionRate - 1) < 0.0001m) ? "1" : $"{conversionRate:F4}";
                     string convertedAmountString = $"{convertedAmount:F2}";
 
-                    
                     string formattedConvertedAmount = $"{convertedAmount:0,0.00}";
 
                     convertedResult.Text = $"{amount} {fromCurrency} - {fromCurrencyName} = {formattedConvertedAmount} {toCurrency} - {toCurrencyName}" +
@@ -254,6 +268,7 @@ namespace FinalCurrency
                 MessageBox.Show("Please enter a valid amount.");
             }
         }
+
 
         private void amountInput_TextChanged(object sender, EventArgs e)
         {
